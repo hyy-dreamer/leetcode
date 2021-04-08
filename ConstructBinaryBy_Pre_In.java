@@ -1,6 +1,6 @@
 package leetcode;
 
-public class ConstructBinaryBy_Pre_In {
+public class ConstructBinaryBy_PreIn_104 {
 	static class TreeNode {
 		int val;
 		TreeNode left;
