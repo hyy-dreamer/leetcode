@@ -33,4 +33,13 @@ public class MaximumDepthofBinaryTree_104 {
         }
         return res.size();
     }
+	
+	//depth-first
+	public int maxDepth_(TreeNode root)
+	{
+		if(root == null) return 0;
+		int leftDepth = maxDepth_(root.left);
+		int rightDepth = maxDepth_(root.right);
+		return Math.max(leftDepth, rightDepth) + 1;
+	}
 }
